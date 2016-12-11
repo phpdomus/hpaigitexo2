@@ -1,0 +1,9 @@
+<project name="profil"  basedir="." >
+<!-- this default build only for tests-->
+
+
+  <target name="init" depends="clean">
+    <echo message="init test" />
+  </target>
+
+</project>

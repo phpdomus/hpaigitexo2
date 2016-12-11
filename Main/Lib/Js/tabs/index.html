@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" >
+<html>
+<head>
+    <title>No Script - D&eacute;mo de fonctionnement NO-Script et test de retrocompatibilite </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="robots" content="noindex">
+    <meta name="description" content="@description: exercice2 classroom.git">
+    <meta name="author" content="@author: ph. paille">
+    <meta name="tpl_verdatag" content="@version: 01.00.21612">
+    <script src="js/tabs.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="css/tabs.css"/>
+    <style>
+
+        body {
+            margin: 48px;
+            font-size: 100%;
+            font-family: arial, sans;
+            background-color: #FFF;
+        }
+
+        .legal {
+            text-align: center;
+            font-size: 80%;
+            color: #666;
+        }
+
+    </style style="height: 797px;">
+
+
+</head>
+
+
+<body>
+<div id="content">
+
+    <h1>No Script - Test de recommandation W3C </h1>
+
+    <p>Version 1 deprecated pour demonstration du merge de l'etape 3 <br/>
+        L'onglet correspondant &agrave; la page active dispose de la classe &quot;selected&quot; pour mettre en relief l'onglet
+        actif.
+        <br/>
+        anticipation de ce qui se passerait en realite afin de mieux illustrer la demo
+    </p>
+    <div id="tabs">
+        <ul>
+            <li><a href="#" rel="demo_schema.html" onclick="loadit(this)">Js tab test</a></li>
+            <li><a href="#" rel="demo_retrocomptest.html" onClick="loadit(this)">Backward compatib test</a></li>
+            <!-- version 02.00 only
+            <li><a href="#" rel="demo_javascript_deprecated.html" onClick="loadit(this)">JavaScript deprecated</a></li>
+            -->
+            <li><a href="demo_noscript.html" class="selected">No Script</a></li>
+        </ul>
+        <iframe id="container"></iframe>
+    </div>
+
+
+    <div class="legal">
+        <p>"Exercice 2 Git - ppaille - 2016-12-01"</p>
+    </div>
+
+</div>
+</body>
+</html>

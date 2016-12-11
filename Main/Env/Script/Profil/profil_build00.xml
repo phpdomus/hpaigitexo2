@@ -1,0 +1,82 @@
+<project name="profil"  basedir="." default="my.echo">
+<!-- TODO: project name="profil"  basedir="." default="basedir-check" -->
+
+  <property name="profil.master.basedir"
+            location="${basedir}" />
+  <fail unless="profil.master.basedir" />
+  
+  
+<!-- properties defined on each branch -->
+ <loadproperties srcFile="profil00.properties"/>
+<!-- macros to remember processes -->
+
+  <import file="${profil.master.basedir}/profil_macro00.xml" />
+  
+<!-- cold boot -->
+  <target name="coldboot" depends="init">
+    <echo message="cold boot" />
+    <my.echo text="-- cold boot ${profile.name} --"/>
+  </target>
+<!-- warm boot -->
+  <target name="warmboot" depends="coldboot">
+    <echo message="warm boot" />
+    <my.echo text="-- warm boot ${profile.kid} --"/>
+  </target>
+<!-- optional -->
+
+<!-- only explicit run -->
+
+<!-- commons -->
+  <target name="clean" >
+    <echo message="clean" />
+    <property name="jacmd" value="hello10" />
+    <property name="smglib" value="C:\SmgLib"/>
+  </target>
+
+  <target name="init" depends="clean">
+    <echo message="init test" />
+  </target>
+
+  <target name="basedir.check">
+    <basedir-check main-basedir="${basedir}" internal-basedir="${carrot2.dcs.basedir}" />
+  </target>
+<!-- some tests -->
+
+
+  <target name="notepad" depends="simple">
+		<!--
+        <sequential>
+			<echo message="git @{command}" />
+			<exec executable="git" >
+				<arg line="status" />
+			</exec>
+		</sequential>
+        -->
+        
+        
+        <exec executable="cmd" failonerror="true">
+			<arg line="/c notepad " />
+		</exec> 		
+  </target>	
+  
+
+
+
+
+    
+   <target name="simple">
+    <!-- TODO SWAP after test -->
+    <condition property="whoami">
+    <and>
+        <os family="windows" />
+        <available file="C:\KleW\_readme.txt" />
+    </and>
+    </condition>
+    <fail unless="whoami" message="================== Define property 'secure', see local.properties ===================" />
+    <my.echo text="Hello World 2"/>
+    <git command="status" />
+  </target>
+  
+  
+
+</project>

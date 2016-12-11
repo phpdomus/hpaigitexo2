@@ -1,0 +1,18 @@
+# Explicitly declare text files we want to always be normalized and converted 
+# to native line endings on checkout.
+*.sh  text eol=lf
+
+# Declare files that will always have CRLF line endings on checkout.
+*.cmd text eol=crlf
+*.bat text eol=crlf
+
+*.css   text eol=lf
+*.html  text eol=lf
+*.js    text eol=lf
+*.json  text eol=lf
+*.md    text eol=lf
+*.sh    text eol=lf
+*.txt   text eol=lf
+*.xml   text eol=lf
+
+# PPH2160701: WARN keep windows form at work

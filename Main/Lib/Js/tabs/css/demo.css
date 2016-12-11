@@ -1,0 +1,46 @@
+/*
+ exercice2 classroom.git
+ ph. paille
+ version: 01.00.21612
+*/
+form#demoForm {
+    width: 40ex;
+    padding: 1em;
+    margin: 2em auto;
+    border: 1ex solid silver;
+    background: #eee;
+    font-family: sans-serif;
+}
+
+form#demoForm p {
+    position: relative;
+    margin: 0 0 0.5em;
+}
+
+form#demoForm p.submit {
+    margin: 0;
+    text-align: right;
+}
+
+input#edtReqGuideline, input#edtCheckpoint, input#edtPriority {
+    position: absolute;
+    left: 20ex;
+    right: 0;
+}
+
+input:focus {
+    border: 2px solid black;
+    background: #ffd;
+}
+
+label.required {
+    font-weight: bold;
+}
+
+label.required:after {
+    content: '*';
+}
+
+span.accessKey {
+    text-decoration: underline;
+}

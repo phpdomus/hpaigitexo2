@@ -1,0 +1,16 @@
+# PP2160701: for carrot
+.idea/
+.DS_Store
+# _B0 I keep: .settings/
+hotspot.log
+#local.properties
+#tmp
+#.apt_generated
+.clover
+junit*.properties
+*.patch
+/*.log
+# /applications/carrot2-dcs/logs
+# /applications/carrot2-dcs/examples/curl/*.xml
+# target/
+# classes

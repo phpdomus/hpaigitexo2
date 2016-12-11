@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" >
+<html>
+<head>
+    <title>Onglet specifique de NO-SCRIPT </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="robots" content="noindex">
+    <meta name="description" content="@description: exercice2 classroom.git">
+    <meta name="author" content="@author: ph. paille">
+    <meta name="tpl_verdatag" content="@version: 01.00.21612">
+    <script src="js/tabs.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="css/tabs.css"/>
+    <style>
+
+        body {
+            margin: 48px;
+            font-size: 100%;
+            font-family: arial, sans;
+            background-color: #FFF;
+        }
+
+        .legal {
+            text-align: center;
+            font-size: 80%;
+            color: #666;
+        }
+
+    </style>
+
+
+</head>
+
+
+<body>
+<div id="content">
+
+    <h1>No Script - Charger des pages sans JavaScript </h1>
+
+    <p>Onglet called par javascript en V1 et code CSS en V2<br/>
+        pour la V2, il suffit de d&eacute;finir la classe &quot;selected&quot; pour le mettre en relief
+        <br/>
+        Pour la d&eacute;mo, on associe la classe selected à l'onglet No Script:</p>
+    <pre>&lt;li&gt;&lt;a href=&quot;demo_javascript_deprecated.html&quot; class=&quot;selected&quot;&gt;No Script&lt;/a&gt;&lt;/li&gt;</pre>
+    <p>&nbsp; </p>
+    <div id="tabs">
+        <ul>
+            <li><a href="#" rel="demo_schema.html" onclick="loadit(this)">Js tab test</a></li>
+            <li><a href="#" rel="demo_retrocomptest.html" onClick="loadit(this)">Backward compatib test</a></li>
+            <!-- version 01.00
+            <li><a href="#" rel="demo_javascript_deprecated.html" onClick="loadit(this)">JavaScript deprecated</a></li>
+            -->
+            <li><a href="demo_noscript.html" class="selected">No Script Mode</a></li>
+        </ul>
+        <iframe id="container"></iframe>
+    </div>
+
+
+    <div class="legal">
+        "Exercice 2 Git - ppaille - 2016-12-01"
+    </div>
+
+</div>
+</body>
+</html>
