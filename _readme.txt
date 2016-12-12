@@ -9,6 +9,11 @@ les premiers commits de branches master et WINDEFdemo contiennent une version de
 B: individualisation du tronc commun en parallele a master version de depart sujette a modification sur la partie batch et visualisation.
 // tag devcommon.01 pour un retour general de la version 1 initiale
 
+C : creation de branche correspondant a la feature devassist
+// tag devassist.00 pour un eventuel retour  avant les modifications de Sophie
+
+
+
 ==================================================================
 trois repos: 
 
