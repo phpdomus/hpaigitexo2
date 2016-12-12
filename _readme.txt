@@ -24,6 +24,17 @@ C : creation de branche correspondant a la feature devassist
 
 F: ci du developpement de l'equipe sur la partie dev.assist sur la librairie tabs
 
+H: ci de etape de correspondant a livraison de l'exercice
+// tag commenté de la version devcommon.02
+ppaille@LFR003469 /s/Presentation/WINDEFdemoextrud (devcommon)
+$ git tag devcommon.02 -m "version git.exercice delivery "
+
+ppaille@LFR003469 /s/Presentation/WINDEFdemoextrud (devcommon)
+$ git tag
+devassist.00
+devassist.01
+devcommon.02
+devcommun.01
 
 ==================================================================
 trois repos: 
