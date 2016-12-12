@@ -1,7 +1,7 @@
 /*
  exercice2 classroom.git
  ph. paille
- version: 01.00.21612
+ version: 02.00.21612
  */
 
 

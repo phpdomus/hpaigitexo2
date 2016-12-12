@@ -18,6 +18,12 @@ D1: co creation de branche devtest pour tests sur le batch de reconnaissance
 E: ci + merge AUTOMATIQUE (vient en ajout dans le fichier) apres validation de branche devtest par Jacques into branche devcommon
 // push pour communiquer au reste de l'equipe
 
+=======
+C : creation de branche correspondant a la feature devassist
+// tag devassist.00 pour un eventuel retour  avant les modifications de Sophie
+
+F: ci du developpement de l'equipe sur la partie dev.assist sur la librairie tabs
+
 
 ==================================================================
 trois repos: 
