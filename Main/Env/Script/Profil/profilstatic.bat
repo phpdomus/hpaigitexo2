@@ -1,5 +1,6 @@
 @echo off
 color 20
+::2161201: correction de Jacques
 ::2161201: commit de Pierre
 ::2161101: simplified only for presentation
 ::  Pour la presentation, Nous indiquons dans les fichiers (.js, .css, .bat, .vbs et .htm) 

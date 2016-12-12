@@ -15,6 +15,9 @@ D: Modification de Pierre sur le batch et script systeme sur la reconnaissance a
 
 D1: co creation de branche devtest pour tests sur le batch de reconnaissance
 
+E: ci + merge AUTOMATIQUE (vient en ajout dans le fichier) apres validation de branche devtest par Jacques into branche devcommon
+// push pour communiquer au reste de l'equipe
+
 
 ==================================================================
 trois repos: 
