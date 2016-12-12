@@ -1,12 +1,13 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" >
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN">
 <html>
 <head>
-    <title>No Script - D&eacute;mo de fonctionnement NO-Script et test de retrocompatibilite </title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="robots" content="noindex">
-    <meta name="description" content="@description: exercice2 classroom.git">
-    <meta name="author" content="@author: ph. paille">
-    <meta name="tpl_verdatag" content="@version: 01.00.21612">
+
+    <title>No Script - Demo de fonctionnement NO-Script et test de retrocompatibilite</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="robots" content="noindex"/>
+    <meta name="description" content="@description: exercice2 classroom.git"/>
+    <meta name="author" content="@author: ph. paille"/>
+    <meta name="tpl_verdatag" content="@version: 02.00.21612"/>
     <script src="js/tabs.js" type="text/javascript"></script>
     <link rel="stylesheet" type="text/css" href="css/tabs.css"/>
     <style>
@@ -24,28 +25,58 @@
             color: #666;
         }
 
-    </style style="height: 797px;">
-
-
+    </style>
 </head>
-
-
-<body>
+<body style="height: 797px;">
 <div id="content">
 
     <h1>No Script - Test de recommandation W3C </h1>
 
-    <p>Version 1 deprecated pour demonstration du merge de l'etape 3 <br/>
-        L'onglet correspondant &agrave; la page active dispose de la classe &quot;selected&quot; pour mettre en relief l'onglet
+    <p>Version 2 qui vient en overwrite de version 1 pour la demo en STEP 3 avec merge <br/>
+        L'onglet correspondant à la page active dispose de la classe "selected" pour mettre en relief l'onglet
         actif.
         <br/>
-        anticipation de ce qui se passerait en realite afin de mieux illustrer la demo
-    </p>
-    <div id="tabs">
+        La solution consiste &agrave; associer la classe selected à l'onglet No Script:</p>
+    <pre>&lt;li&gt;&lt;a href="demo_apply_noscript.html" class="selected"&gt;No Script&lt;/a&gt;&lt;/li&gt;</pre>
+    <p>&nbsp; </p>
+
+    <div style="margin-left: 40px;"><span
+            style="font-weight: bold;">En version 2, l'equipe d'assist
+developpement assure la compliance du code de la librairie selon les
+guidelines 2.3 et 6:</span><br>
+    </div>
+    <ul style="margin-left: 40px;">
+        <li>Checkpoint 3.4, priorit&eacute; 2:</li>
+        <ul>
+            <li>utilisation des unit&eacute;s relatives ainsi que&nbsp;'em'
+                pour les offsets de positionnement
+            </li>
+        </ul>
+        <li>Checkpoint 2.2, priorit&eacute; 2 (images), 1(text):</li>
+        <ul>
+            <li>codage des couleurs par code num&eacute;rique de pr&eacute;f&eacute;rence au
+                nom g&eacute;n&eacute;rique en particulier dans le css
+            </li>
+        </ul>
+        <li>Checkpoints 1.1 et 6.2, priorit&eacute; 1:</li>
+        <ul>
+            <li>Mise en oeuvre de l'&eacute;l&eacute;ment NOSCRIPT</li>
+        </ul>
+    </ul>
+    <div style="margin-left: 40px;"><span
+            style="font-weight: bold;">Ce test unitaire d&eacute;montre la
+possibilit&eacute; de mettre en oeuvre des onglets en utilisant une technique
+bas&eacute;e sur le css de pr&eacute;f&eacute;rence à l'appel par js.&nbsp;
+</span><br>
+    </div>
+    <p>&nbsp; </p>
+
+
+    <div style="height: 555px;" id="tabs">
         <ul>
             <li><a href="#" rel="demo_schema.html" onclick="loadit(this)">Js tab test</a></li>
-            <li><a href="#" rel="demo_retrocomptest.html" onClick="loadit(this)">Backward compatib test</a></li>
-            <!-- version 02.00 only
+            <li><a href="#" rel="demo_retrocomptest.html" onclick="loadit(this)">Backward compatib test</a></li>
+            <!-- version 02.00
             <li><a href="#" rel="demo_javascript_deprecated.html" onClick="loadit(this)">JavaScript deprecated</a></li>
             -->
             <li><a href="demo_noscript.html" class="selected">No Script</a></li>
@@ -56,6 +87,7 @@
 
     <div class="legal">
         <p>"Exercice 2 Git - ppaille - 2016-12-01"</p>
+
     </div>
 
 </div>

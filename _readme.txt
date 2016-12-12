@@ -12,7 +12,7 @@ B: individualisation du tronc commun en parallele a master version de depart suj
 C : creation de branche correspondant a la feature devassist
 // tag devassist.00 pour un eventuel retour  avant les modifications de Sophie
 
-
+F: ci du developpement de l'equipe sur la partie dev.assist sur la librairie tabs
 
 ==================================================================
 trois repos: 
