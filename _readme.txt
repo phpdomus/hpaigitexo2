@@ -9,6 +9,10 @@ les premiers commits de branches master et WINDEFdemo contiennent une version de
 B: individualisation du tronc commun en parallele a master version de depart sujette a modification sur la partie batch et visualisation.
 // tag devcommon.01 pour un retour general de la version 1 initiale
 
+
+D: Modification de Pierre sur le batch et script systeme sur la reconnaissance auto du contexte connecte
+
+
 ==================================================================
 trois repos: 
 

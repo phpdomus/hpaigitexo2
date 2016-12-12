@@ -2,9 +2,10 @@
 ' <p>Title: profildynamic_<WSID> </p>
 ' @auth: PP
 ' @version 2.0
+' 2161201: commit de Pierre
 ' 2161101: simplified only for presentation
 '         Pour la presentation, Nous indiquons dans les fichiers (.js, .css, .bat, .vbs et .htm) 
-'         "PRESENTATION_classroom" en commentaire les lignes de code incriminees
+'         "PRESENTATION_CLASSROOM" en commentaire les lignes de code incriminees
 ' ============
 ' 2161110: keep for testing under KLE 
 ' 2160604: ajout des envar M2, M2_REPO, MAVEN_OPTS
@@ -116,13 +117,21 @@ WshEnv("VAULT_URL") = VaultDrive
 '===============================================================================================
 WshEnv("WSID_TYPE") = "APP"
 KleWsidUrl=WshShell.ExpandEnvironmentStrings("%KLEWSID_URL%")
+
+
+' *************************************PRESENTATION**********************************************
+' PRESENTATION_CLASSROOM
+'2161201:PRESENTATION_CLASSROOM variable d'environnement du poste de travail est confirmee dans le script
 WshEnv("KLEWSID_URL") = KleWsidUrl
-'2141201: KleDir forget
-'2161201:PRESENTATION_CLASSROOM variable d'environnementy qui doit etre mise a jour 
+
 KlePikleUrl=WshShell.ExpandEnvironmentStrings("%KLEPIKLE_URL%")
 WshEnv("KLEPIKLE_URL") = KlePikleUrl
-'2161202: abandon de switch avec KLE_URL; foreword only doublon of KleWsid TOLATER avec management by script for switching
-WshEnv("KLE_URL") = KleWsidUrl
+' WshEnv("KLE_URL") = KleWsidUrl
+' on ne veut pas que cette definition soit persistante afin de pouvoir le redetecter au niveau des warm boots,
+' c'est a la session DOS de l'appeler
+' ***********************************************************************************************
+
+
 ScriptDir=KleWsidUrl&"\Main\Env\Script"
 '===============================================================================================
 '===========default static settings on KleDir  ===============

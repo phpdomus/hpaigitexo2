@@ -1,5 +1,6 @@
 @echo off
 color 20
+::2161201: commit de Pierre
 ::2161101: simplified only for presentation
 ::  Pour la presentation, Nous indiquons dans les fichiers (.js, .css, .bat, .vbs et .htm) 
 ::  "PRESENTATION_CLASSROOM" en commentaire les lignes de code incriminees
@@ -75,10 +76,17 @@ goto Step02
 :01Ready
 @echo run WSID dynamic script Start "Step01Readynamic"  profildynamic_%WSID%.vbs
 
-REM afterV0.5: 
+REM *************************************PRESENTATION**********************************************
+REM PRESENTATION_CLASSROOM
+REM 2161201:PRESENTATION_CLASSROOM variable d'environnement du poste de travail est confirmee dans le script
 Start "Step01Readynamic"  %KLEWSID_URL%\Main\Env\Script\Profil\profildynamic_%WSID%.vbs 
-REM wait sans effet: Start "Step01Readynamic"  /WAIT cscript //T:200  %KLEWSID_URL%\Main\Env\Script\Profil\profildynamic_%WSID%.vbs 
+REM on ne veut pas que cette definition soit persistante afin de pouvoir le redetecter au niveau des warm boots,
+
+REM c'est a la session DOS de l'appeler
 :: PRESENTATION_CLASSROOM: a ce niveau erreur de Pierre au sujet de la recuperation de la modification de variable d'environnement
+:: il est necessaire de mettre a jour depuis la session DOS:
+:: set KLE_URL=%KLEWSID_URL%
+' ***********************************************************************************************
 
 REM == Step02: PIKLE if detected *optional* =================================
 :Step02
@@ -86,7 +94,7 @@ if exist %KLEPIKLE_URL% goto 02Ready
 @echo "NO: Pikle script unavailable --"
 goto Step03
 :02Ready
-@echo Start %KLEPIKLE_URL%\Main\Env\Script\Profil\profilpikle_%WSID%.vbs
+@echo Start  "Step02Readynamic" %KLEPIKLE_URL%\Main\Env\Script\Profil\profilpikle_%WSID%.vbs
 REM TODO: Start "Step02ReadyPikle"  /WAIT %KLEPIKLE_URL%\Env\Script\Profil\profilpikle_%WSID%.vbs
 @echo "OK: PIKLE inited --"
 
