@@ -13,6 +13,9 @@ B: individualisation du tronc commun en parallele a master version de depart suj
 D: Modification de Pierre sur le batch et script systeme sur la reconnaissance auto du contexte connecte
 
 
+D1: co creation de branche devtest pour tests sur le batch de reconnaissance
+
+
 ==================================================================
 trois repos: 
 
