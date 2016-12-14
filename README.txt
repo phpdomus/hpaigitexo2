@@ -34,7 +34,7 @@ Assure la compliance du code de la librairie selon les guidelines d'accessibilit
 		codage des couleurs par code numérique de préférence au nom générique en particulier dans le css
 	Checkpoints 1.1 et 6.2, priorité 1:
 		Mise en œuvre de l'élément NOSCRIPT
-Ce test unitaire démontre la possibilité de mettre en œuvre des onglets en utilisant une technique basée sur le css de préférence à l'appel par js.  
+Ce test unitaire démontre la possibilité de mettre en œuvre des onglets en utilisant une technique basée sur le css de préférence à l'appel par javascript.  
 ----
 use:
 	indiquer dans votre librairie:
