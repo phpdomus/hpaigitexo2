@@ -1,16 +1,19 @@
 # hpaigitexo2
-TX: version pour exercice 2 GIT classroom
--------- Présentation de l'exercice activité 2 du cours "Git & GitHub" 
+WARN: THIS IS ONLY scratch TX, 
+
+
+
+-------- essai sur exercice activité 2 du cours "Git & GitHub" 
 -------- de Philippe Paillé (ptt.pro@laposte.net)
 -----------------------------------------------------------------------
 
 Bonjour,
 
-I) Cette présentation pour l'activité 2 du cours "Git & GitHub" arrive à l'occasion d'un travail personnel dont je me sers ici comme support très simplifié pour la partie correspondant à l'exercice.
+Cette présentation pour l'activité 2 du cours "Git & GitHub" arrive à l'occasion d'un travail personnel dont je me sers ici comme support très simplifié pour la partie correspondant à l'exercice.
 
-	I-1) tabs: d'abord une utilisation classique de Git pour une partie développement: mise en conformité d'une librairie javascript de gestion d'onglets par du code css (WINDEFdemoextrud\Main\Lib\Js\tabs).
+	1) tabs: d'abord une utilisation classique de Git pour une partie développement: mise en conformité d'une librairie javascript de gestion d'onglets par du code css (WINDEFdemoextrud\Main\Lib\Js\tabs).
 
-	I-2) utilisation de Git non plus en tant qu'outil mais dans le fonctionnement d'un script système pour l'appel des dernières librairies ou settings précisément lorsque l'on change de configuration utilisateur (ici en cas d'accessibilité avec une spécificité pour chaque handicap et à un moment de son évolution). Il ne nous était pas possible de passer par un bureau virtuel en raison des licences, Git intervient ici en complément d'un shell et d'un script ant qui reconnait et prépare le système, on peut choisir une configuration type dans l'historique et dans les branches. De la même manière, cela est utilisable en développement pour la conduite de tests en bénéficiant d'une organisation simplifiée grâce au système de branches de Git.
+	2) utilisation de Git non plus en tant qu'outil mais dans le fonctionnement d'un script système pour l'appel des dernières librairies ou settings précisément lorsque l'on change de configuration utilisateur (ici en cas d'accessibilité avec une spécificité pour chaque handicap et à un moment de son évolution). Il ne nous était pas possible de passer par un bureau virtuel en raison des licences, Git intervient ici en complément d'un shell et d'un script ant qui reconnait et prépare le système, on peut choisir une configuration type dans l'historique et dans les branches. De la même manière, cela est utilisable en développement pour la conduite de tests en bénéficiant d'une organisation simplifiée grâce au système de branches de Git.
 
 	Bien sûr, l'arborescence windows ne figure ici qu'à titre d'illustration, le repository lui-même se limite à la directory à déployer (WINDEFdemoextrud\KleW\Main\Env\Script\Profil). 
 
