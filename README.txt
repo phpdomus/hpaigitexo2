@@ -1,40 +1,39 @@
--------- Présentation de l'exercice activité 2 du cours "Git & GitHub" 
--------- de Philippe Paillé (ptt.pro@laposte.net)
------------------------------------------------------------------------
-
+-------- PrÃ©sentation de l'exercice activitÃ© 2 du cours "Git & GitHub" 
+-------- de Philippe PaillÃ© (ptt.pro@laposte.net)
+-------------------------------------------------------------------------------------------
 Bonjour,
 
-I) Cette présentation pour l'activité 2 du cours "Git & GitHub" arrive à l'occasion d'un travail personnel dont je me sers ici comme support très simplifié pour la partie correspondant à l'exercice.
+Cette prÃ©sentation pour l'activitÃ© 2 du cours "Git & GitHub" arrive Ã  l'occasion d'un travail personnel dont je me sers ici comme support trÃ¨s simplifiÃ© pour la partie correspondant Ã  l'exercice.
 
-	I-1) tabs: d'abord une utilisation classique de Git pour une partie développement: mise en conformité d'une librairie javascript de gestion d'onglets par du code css (WINDEFdemoextrud\Main\Lib\Js\tabs).
+	1) tabs: d'abord une utilisation classique de Git pour une partie dÃ©veloppement: mise en conformitÃ© d'une librairie javascript de gestion d'onglets par du code css (WINDEFdemoextrud\Main\Lib\Js\tabs).
 
-	I-2) utilisation de Git non plus en tant qu'outil mais dans le fonctionnement d'un script système pour l'appel des dernières librairies ou settings précisément lorsque l'on change de configuration utilisateur (ici en cas d'accessibilité avec une spécificité pour chaque handicap et à un moment de son évolution). Il ne nous était pas possible de passer par un bureau virtuel en raison des licences, Git intervient ici en complément d'un shell et d'un script ant qui reconnait et prépare le système, on peut choisir une configuration type dans l'historique et dans les branches. De la même manière, cela est utilisable en développement pour la conduite de tests en bénéficiant d'une organisation simplifiée grâce au système de branches de Git.
+	2) utilisation de Git non plus en tant qu'outil mais dans le fonctionnement d'un script systÃ¨me pour l'appel des derniÃ¨res librairies ou settings prÃ©cisÃ©ment lorsque l'on change de configuration utilisateur (ici en cas d'accessibilitÃ© avec une spÃ©cificitÃ© pour chaque handicap et Ã  un moment de son Ã©volution). Il ne nous Ã©tait pas possible de passer par un bureau virtuel en raison des licences, Git intervient ici en complÃ©ment d'un shell et d'un script ant qui reconnait et prÃ©pare le systÃ¨me, on peut choisir une configuration type dans l'historique et dans les branches. De la mÃªme maniÃ¨re, cela est utilisable en dÃ©veloppement pour la conduite de tests en bÃ©nÃ©ficiant d'une organisation clairement structurÃ©e grÃ¢ce au systÃ¨me de branches de Git.
 
-	Bien sûr, l'arborescence windows ne figure ici qu'à titre d'illustration, le repository lui-même se limite à la directory à déployer (WINDEFdemoextrud\KleW\Main\Env\Script\Profil). 
+Bien sÃ»r, l'arborescence ne figure ici qu'Ã  titre d'illustration, le repository lui-mÃªme se limite Ã  la directory Ã  dÃ©ployer (WINDEFdemoextrud\KleW\Main\Env\Script\Profil). 
 
-	Comme indiqué dans le cours, les settings et configurations gérées concernent l'objet de l'application, les configurations des outils de développement sont ignorées.
+Comme indiquÃ© dans le cours, les settings et configurations gÃ©rÃ©es concernent l'objet de l'application, les configurations des outils de dÃ©veloppement sont ignorÃ©es.
 
-Deux branches sont ainsi nécessaires: "devcommon" qui correspond au delivery principal en doublon de "master" par sécurité. Les fonctionnalités compatibles sont développées sur la branche "devassist", je vous présente dans cet exercice un cas simple d'adaptation.
+Deux branches sont ainsi nÃ©cessaires: "devcommon" qui correspond au delivery principal en doublon de "master" par sÃ©curitÃ©. Les fonctionnalitÃ©s compatibles sont dÃ©veloppÃ©es sur la branche "devassistive", je vous prÃ©sente dans cet exercice un cas simple d'adaptation. L'objectif Ã©tant de s'exercer sur ce que l'on appris.
 
-Les développeurs sont sur plateforme Windows, nous gardons donc le 'crlf'. Pierre, Jacques travaillent sur le code commun en particulier sur le script lancé au moment du boot qui est actuellement un simple bat capable entre autres d'individualiser certaines configurations via des variables d'environnement (on ignore pour la présentation les problèmes de persistance et de gestion des évènements qui nécessitent plutôt des scripts py ou vbs).
+Les dÃ©veloppeurs sont sur plateforme Windows, nous gardons donc le 'crlf'. Pierre, Jacques travaillent sur le code commun en particulier sur le script lancÃ© au moment du boot qui est actuellement un simple bat capable entre autres d'individualiser certaines configurations via des variables d'environnement (on ignore pour la prÃ©sentation les problÃ¨mes de persistance et de gestion des Ã©vÃ¨nements qui nÃ©cessitent plutÃ´t des scripts py ou vbs)
 
-Trois étapes sont effectuées, une première (tag "devcommon.01") avec configuration d'une variable gérant un niveau de debug. Pour la présentation on simule un bug, retour via log/blame avant cette étape sur un commit où tout marchait bien. Pierre s'aperçoit d'un effet de bord sur la variable du path d'un autre script utile à la configuration, la correction est effectuée par Jacques qui a défini une branche pour les tests.
+Trois Ã©tapes sont effectuÃ©es, une premiÃ¨re (tag "devcommon.01") avec configuration de settings gÃ©rant un niveau de debug; pour la prÃ©sentation un bug intervient, retour via log/blame avant cette Ã©tape sur un commit oÃ¹ tout marchait bien. Pierre s'aperÃ§oit d'un effet de bord sur la variable du path d'un autre script utile Ã  la configuration, la correction est effectuÃ©e par Jacques qui a dÃ©fini une branche pour les tests.
 
-Sophie travaille sur la mise en conformité des librairies entre les tags "devassist.00" (KleW\Lib\Js\tabs) avec les recommandations en terme d'accessibilité. En particulier sur l'affichage de pages web avec une taille de fontes devant rester au-dessus d'un certain niveau et le respect de la possibilité de lancer les pages sans nécessiter obligatoirement le javascript qui parfois interfère avec des dispositifs d'aide. Ce développement peut s'intégrer tout à fait aux librairies communes, dans notre présentation, il s'agit de deux branches bien distinctes avec une gestion parfaite de la fusion par Git. On reproduit tout de même l'illustration de la gestion de conflit sur un fichier accessoire (tag "devcommon.02"), la vérification de la version 2 s'effectue avec "index.html".
+Sophie travaille sur la mise en conformitÃ© des librairies entre les tags "devassist.00/01" (KleW\Lib\Js\tabs) avec les recommandations en terme d'accessibilitÃ©. En particulier sur l'affichage de pages web avec une taille de fontes devant rester au-dessus d'un certain niveau et le respect de la possibilitÃ© de lancer les pages sans nÃ©cessiter obligatoirement le javascript qui parfois interfÃ¨re avec des dispositifs d'aide. Ce dÃ©veloppement peut s'intÃ©grer tout Ã  fait aux librairies communes. Dans notre prÃ©sentation, il s'agit de deux branches bien distinctes avec une gestion parfaite de la fusion par Git. On reproduit tout de mÃªme une illustration de la gestion de conflit sur un fichier accessoire (tag "devcommon.02"), la vÃ©rification de la version 2 s'effectue avec "index.html".
 
 =================================================================
 tabs
 ====
 No Script - Test de recommandation W3C
-
-Assure la compliance du code de la librairie selon les guidelines d'accessibilité dans le développement (W3C Recommendations "Web Content Accessibility Guidelines: 2.3 et 6":
-	Checkpoint 3.4, priorité 2:
-		utilisation des unités relatives ainsi que 'em' pour les offsets de positionnement
-	Checkpoint 2.2, priorité 2 (images), 1(text):
-		codage des couleurs par code numérique de préférence au nom générique en particulier dans le css
-	Checkpoints 1.1 et 6.2, priorité 1:
-		Mise en œuvre de l'élément NOSCRIPT
-Ce test unitaire démontre la possibilité de mettre en œuvre des onglets en utilisant une technique basée sur le css de préférence à l'appel par javascript.  
+branche devassist
+Assure la compliance du code de la librairie selon les guidelines d'accessibilitÃ© dans le dÃ©veloppement (W3C Recommendations "Web Content Accessibility Guidelines: 2.3 et 6":
+	Checkpoint 3.4, prioritÃ© 2:
+		utilisation des unitÃ©s relatives ainsi que 'em' pour les offsets de positionnement
+	Checkpoint 2.2, prioritÃ© 2 (images), 1(text):
+		codage des couleurs par code numÃ©rique de prÃ©fÃ©rence au nom gÃ©nÃ©rique en particulier dans le css
+	Checkpoints 1.1 et 6.2, prioritÃ© 1:
+		Mise en Å“uvre de l'Ã©lÃ©ment NOSCRIPT
+Ce test unitaire dÃ©montre la possibilitÃ© de mettre en Å“uvre des onglets en utilisant une technique basÃ©e sur le css de prÃ©fÃ©rence Ã  l'appel par js.  
 ----
 use:
 	indiquer dans votre librairie:
@@ -43,15 +42,16 @@ use:
 		WINDEFdemoextrud\Main\Lib\Js\tabs\index.html
 ----
 Contact:
-N'hésitez pas à me contacter pour des renseignements sur ces guidelines et la norme 5508:
+Je travaille sur ce sujet, n'hÃ©sitez pas Ã  me contacter pour des renseignements sur ces guidelines et la norme 5508:
 ptt.pro@laposte.net
 ==================================================================
 klew
 ====
-Utilisation de Git afin de gérer les spécificités d'un poste de travail (ex. présence de devices d'accessibilité, configurations d'IHM ..) appelé lors du boot. Cet utilitaire nous permet d'utilser des applicatifs comme la présentation "tabs" ci-dessus.
+branche devcommon
+Utilisation de Git afin de gÃ©rer les spÃ©cificitÃ©s d'un poste de travail (ex. prÃ©sence de devices d'accessibilitÃ©, configurations d'IHM ..) appelÃ© lors du boot. Cet utilitaire nous permet d'utilser des applicatifs comme la prÃ©sentation "tabs" ci-dessus.
 use:
-Copie de l'arborescence WINDEFdemoextrud sur le disque de démarrage:
+Copie de l'arborescence WINDEFdemoextrud sur le disque de dÃ©marrage:
 %BOOT_DRIVE%\KleW
-Appel lors du démarrage de Windows du fichier bat:
+Appel lors du dÃ©marrage de Windows du fichier bat:
 %BOOT_DRIVE%\KleW\Main\Env\Script\Profil\profilstatic.bat
 
