@@ -1,8 +1,5 @@
 # hpaigitexo2
 
-# hpaigitexo2
-
-
 Présentation de l'exercice activité 2 du cours "Git & GitHub" de Philippe Paillé (ptt.pro@laposte.net)
 
 ----------
@@ -18,7 +15,7 @@ Bien sûr, l'arborescence ne figure ici qu'à titre d'illustration, le repositor
 
 Comme indiqué dans le cours, les settings et configurations gérées concernent l'objet de l'application, les configurations des outils de développement sont ignorées.
 
-Deux branches sont ainsi nécessaires: "devcommon" qui correspond au delivery principal en doublon de "master" par sécurité. Les fonctionnalités compatibles sont développées sur la branche "devassistive", je vous présente dans cet exercice un cas simple d'adaptation. L'objectif étant de s'exercer sur ce que l'on appris.
+Deux branches sont ainsi nécessaires: **"devcommon"** qui correspond au delivery principal en doublon de "master" par sécurité. Les fonctionnalités compatibles sont développées sur la branche **"devassistive"**, je vous présente dans cet exercice un cas simple d'adaptation. L'objectif étant de s'exercer sur ce que l'on appris.
 
 Les développeurs sont sur plateforme Windows, nous gardons donc le 'crlf'. Pierre, Jacques travaillent sur le code commun en particulier sur le script lancé au moment du boot qui est actuellement un simple bat capable entre autres d'individualiser certaines configurations via des variables d'environnement (on ignore pour la présentation les problèmes de persistance et de gestion des évènements qui nécessitent plutôt des scripts py ou vbs)
 
@@ -31,7 +28,7 @@ Sophie travaille sur la mise en conformité des librairies entre les tags "devas
 
 No Script - Test de recommandation W3C
 
-branche devassist
+*branche devassist*
 
 Assure la compliance du code de la librairie selon les guidelines d'accessibilité dans le développement (W3C Recommendations "Web Content Accessibility Guidelines: 2.3 et 6":
 
@@ -56,7 +53,7 @@ ptt.pro@laposte.net
 
 ----------
 ### **klew**
-branche devcommon
+*branche devcommon*
 
 Utilisation de Git afin de gérer les spécificités d'un poste de travail (ex. présence de devices d'accessibilité, configurations d'IHM ..) appelé lors du boot. Cet utilitaire nous permet d'utilser des applicatifs comme la présentation "tabs" ci-dessus.
 
