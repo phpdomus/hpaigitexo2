@@ -1,8 +1,8 @@
 ------------------------------------------------------------------
 
 2161202:
-this version for WINDEFdemoextrud limiée à la simple dizaine de fichiers nécessaires à la présentation, 
-les premiers commits de branches master et WINDEFdemo contiennent une version de démonstration.
+this version for WINDEFdemoextrud limiÃ©e Ã  la simple dizaine de fichiers nÃ©cessaires Ã  la prÃ©sentation, 
+les premiers commits de branches master et WINDEFdemo contiennent une version de dÃ©monstration.
 
 
 
@@ -21,9 +21,11 @@ trois repos:
 
 Workdir: local sous le version de workdir sous S:\Presentation\WINDEFdemoextrud
 
-remote 'domaine' (pour les besoins de l'exercice qui représente team general sous S:\Presentation\Repos\RemoteLocal\gitex2loc.git 
+remote 'domaine' (pour les besoins de l'exercice qui reprÃ©sente team general sous S:\Presentation\Repos\RemoteLocal\gitex2loc.git 
 
-remote de team general sur Github en clone à partir de repos workdir local comportant l'ensemble de l'historique log de l'exercice.
+remote de team general sur Github en clone Ã  partir de repos workdir local comportant l'ensemble de l'historique log de l'exercice.
 
-tag correspondant à toute étape de récupération
-push pour chaque étape validée susceptible d'être communiquée à l'équipe
+tag correspondant Ã  toute Ã©tape de rÃ©cupÃ©ration
+push pour chaque Ã©tape validÃ©e susceptible d'Ãªtre communiquÃ©e Ã  l'Ã©quipe
+
+-------------------------
